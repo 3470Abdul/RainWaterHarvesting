@@ -1,0 +1,51 @@
+
+
+
+nav{
+    background-color: rgb(190, 222, 233);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+
+
+nav ul li a{
+    font-weight: bold;
+    
+   
+}
+.nav-item ul li a:hover{
+    background-color: lightblue;
+   font-style: italic;
+  
+}
+
+.nav-link{
+    margin-right: 20px;
+    
+    
+    } 
+#nav li a{
+    color:black
+}
+.nav-item ul li a{
+    /* background-color: rgb(190, 222, 233); */
+    font-weight: bold;
+  padding: 10;
+
+}
+ul li a:hover{
+    background-color: rgb(124, 176, 194);
+}
+.active{
+   border-bottom: 2px solid rgb(10, 10, 78);
+   
+}
+
+
+
+
+p{
+    font-size: 20px;
+}

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+<!-- css link -->
+<link rel="stylesheet" href="./assets/index.css" type="text/css">
+<!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<link rel="stylesheet" href="./assets/cart.css">
+<script src="./assets/cart.js"></script>
+
+<style>
+    .shop-item{
+width: 25%;
+border: 1px solid rgb(236, 234, 234);
+background-color: rgb(231, 245, 252);
+    }
+    .shop-item-image{
+width: 100%;
+border: 1px solid rgb(236, 235, 235);
+    }
+    span{
+      height: 60px;  
+    }
+     
+    
+@media screen and (max-width: 1024px)
+ {
+    .container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .shop-item{
+        width: 35%;
+        margin-top: 10px;
+    }
+               
+   } 
+   @media screen and (max-width: 768px)
+   {
+    .container{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .shop-item{
+        width: 50%;
+        margin-top: 10px;
+    }
+     .shop-item-title{
+         font-size: medium;
+     }   
+     span{
+      height: 40px;  
+    
+    }
+    button{
+width: 100%;
+
+    }
+   } 
+   @media screen and (max-width: 480px)
+   {
+
+   .container{
+    width: 100%;
+    flex-wrap: wrap;
+}
+.shop-item{
+    width: 98%;
+    margin-top: 10px;
+}
+ 
+    
+   }
+
+   .shop-item-price {
+       font-weight: bold;
+       margin: 0px 15px 3px 15px;
+   }
+   .sticky{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+    <div class="sticky ">
+   
+        <button onclick="history.back()" class="btn btn-success" style="font-weight: bold;">Continue Shopping</button>
+    </div>
+</div>
+        <section class="container content-section " >
+           
+            <h2 class="section-header mt-5">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <strong>
+                    
+                <span class="cart-total-price">0 Rs</span>
+            </strong>
+            </div>
+        <div class="" style="order: -1;">
+            <a href="./form.html">
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </a>
+          
+        </div>
+   
+    </section>
+
+    <div class="mainmenu">
+    <!-- filter -->
+
+    <section class="container-fluid content-section mt-5" > 
+        <h2 class="section-header">Filter</h2>
+        
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Vortex Rainwater Filter</span>
+                <img class="shop-item-image" src="./assets/images/filter 1.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price ">10000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 1.1 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Vortex Fine Filter</span>
+                <img class="shop-item-image" src="./assets/images/filter 3.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">10500 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        <!-- 1.2 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Downpipe Filter</span>
+                <img class="shop-item-image" src="./assets/images/filter 2.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">12000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 1.3 -->
+            <div class="shop-item">
+                <span class="shop-item-title">3P Filter Collector</span>
+                <img class="shop-item-image" src="./assets/images/filter 4.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">12000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 1.4 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Flush  Diverter</span>
+                <img class="shop-item-image" src="./assets/images/filter 5.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">18000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 1.5 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Leaf Separator</span>
+                <img class="shop-item-image" src="./assets/images/filter 6.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">14500 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 1.6 -->
+            
+        </div>
+        <!-- 1 -->
+    </section>
+    <!-- Tank -->
+    <section class="container-fluid  content-section "> 
+        <h2 class="section-header">Tank</h2>
+        
+        <div class="shop-items">
+            
+            <div class="shop-item">
+                <span class="shop-item-title">Metal Storage Tank</span>
+                <img class="shop-item-image" src="./assets/images/tank 1.png" width="100%">
+            
+                <div class="shop-item-details">
+                    <span class="shop-item-price">30000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 2.1 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Fiberglass Storage Tanks</span>
+                <img class="shop-item-image" src="./assets/images/tank 2.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">25000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        <!-- 2.2 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Polyethylene Storage Tanks</span>
+                <img class="shop-item-image" src="./assets/images/tank 3.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">22000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 2.3 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Modular Rainwater Tanks</span>
+                <img class="shop-item-image" src="./assets/images/tank 4.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">52000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 2.4 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Timber Wood Water Tanks</span>
+                <img class="shop-item-image" src="./assets/images/tank 5.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">16000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 2.5 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Drinking water storagre tank</span>
+                <img class="shop-item-image" src="./assets/images/tank 6.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">1000000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 2.6 -->
+            
+        </div>
+    </section>
+    <!-- 2 -->
+    <!-- pump -->
+    <section class="container-fluid content-section "> 
+        <h2 class="section-header">Pumps</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Suction Boaster</span>
+                <img class="shop-item-image" src="./assets/images/pump 1.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">50000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 3.1 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Submersible Pump</span>
+                <img class="shop-item-image" src="./assets/images/pump 2.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">14000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 3.2 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Flooded Suction Boaster</span>
+                <img class="shop-item-image" src="./assets/images/pump 3.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">10500 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 3.3 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Water Centrifugal Pump</span>
+                <img class="shop-item-image" src="./assets/images/pump 4.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">90000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 3.4 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Suction Sump Boaster</span>
+                <img class="shop-item-image" src="./assets/images/pump 5.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">28000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 3.5 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Submersible Pump Skids</span>
+                <img class="shop-item-image" src="./assets/images/pump 6.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">74500 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 3.6 -->
+        </div>
+    </section>
+    <!-- 3 -->
+    <!-- pipe -->
+    <section class="container-fluid content-section "> 
+        <h2 class="section-header">Pipe</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Steel Pipe</span>
+                <img class="shop-item-image" src="./assets/images/pipes 1.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">30000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 4.1 -->
+            <div class="shop-item">
+                <span class="shop-item-title">PVC Pipe</span>
+                <img class="shop-item-image" src="./assets/images/pipes 2.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">12000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 4.2 -->
+            <div class="shop-item">
+                <span class="shop-item-title">U Channel Pipes & Fitting</span>
+                <img class="shop-item-image" src="./assets/images/pipes 3.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">11500 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 4.3 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Gray Concret & Cement 3-Pipes</span>
+                <img class="shop-item-image" src="./assets/images/pipes 4.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">22000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 4.4 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Fitting & Plumbing</span>
+                <img class="shop-item-image" src="./assets/images/pipes 5.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">34500 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 4.5 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Wedge Wire Screen</span>
+                <img class="shop-item-image" src="./assets/images/pipes 6.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">20000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 4.6 -->
+        </div>
+    </section>
+    <!-- 4 -->
+    <!-- accessories -->
+    <section class="container-fluid content-section "> 
+        <h2 class="section-header">Other Accessories</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Precast Ring</span>
+                <img class="shop-item-image" src="./assets/images/accessories 1.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">10000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 3.1 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Pipe Collar</span>
+                <img class="shop-item-image" src="./assets/images/accessories 2.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">12000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 3.2 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Pipe Joint</span>
+                <img class="shop-item-image" src="./assets/images/accessories 3.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">8000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 3.3 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Voltage Controller</span>
+                <img class="shop-item-image" src="./assets/images/accessories 4.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">17000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 3.4 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Pump Controller</span>
+                <img class="shop-item-image" src="./assets/images/accessories 5.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">26000 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 3.5 -->
+            <div class="shop-item">
+                <span class="shop-item-title">Polyethylene Pipe</span>
+                <img class="shop-item-image" src="./assets/images/accessories 6.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">24500 Rs</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <!-- 3.6 -->
+        </div>
+    </section>
+    <!-- 5 -->
+</div>
+
+
+
+   
+</body>
+</html>
